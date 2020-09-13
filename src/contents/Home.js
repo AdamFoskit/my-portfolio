@@ -1,18 +1,26 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect'
-import profilepic from '../images/Bear.png'
-import Social from '../components/Social'
+import ProfilePicture from '../images/SelfResized.png'
+import Background from '../images/coding.gif'
+import './Home.css'
 function Home() {
     return (
-        <div className='condiv home'>
-            <img src={profilepic} className='profilepic'></img>
-            <ReactTypingEffect
-                text={['I am Adam Foskit', 'I am a Software Engineer']}
-                className='typingeffect'
-                speed={100}
-                eraseDelay={500}
-            />
-            <Social />
+        <div className={'background'}>
+            <div className={'text-center'}>
+                <img
+                    className='avatar'
+                    alt={'Adam Foskit'}
+                    src={ProfilePicture}
+                />
+                <h1>Adam Foskit</h1>
+                <h3>Full Stack Developer</h3>
+                <ReactTypingEffect
+                    text={['I am Adam Foskit', 'I am a Software Engineer']}
+                    className='typingeffect'
+                    speed={100}
+                    eraseDelay={500}
+                />
+            </div>
         </div>
     )
 }

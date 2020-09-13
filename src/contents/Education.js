@@ -1,21 +1,11 @@
 import React from 'react'
-import Widecard from '../components/Widecard'
+import './Education.css'
+import Diploma from '../images/Diploma.jpg'
 function Education() {
     return (
-        <div className='condiv'>
+        <div style={{ textAlign: 'center' }}>
             <h1 className='subtopic'>My Education</h1>
-            <Widecard
-                title='Bachelor of Science | Computer Science'
-                where='Texas A&M University-Corpus Christi'
-                from='August 2015'
-                to='Present'
-            />
-            {/* <Widecard
-                title=''
-                where=''
-                from=''
-                to=''
-            /> */}
+            <img className='diploma' src={Diploma} />
         </div>
     )
 }
