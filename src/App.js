@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { withRouter } from 'react-router'
 import Home from './contents/Home'
 import About from './contents/About'
@@ -34,32 +34,31 @@ const HeaderWithRouter = withRouter(Header)
 
 function App() {
     return (
-        <Router basename={'/my-portfolio'}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <HeaderWithRouter />
             <div className={'container-fluid'}>
-                <Route exact path='/home'>
-                    <Home />
-                </Route>
-                <Route exact path='/about'>
-                    <About />
-                </Route>
-                <Route exact path='/education'>
-                    <Education />
-                </Route>
-                <Route exact path='/skills'>
-                    <Skills />
-                </Route>
-                <Route exact path='/contact'>
-                    <Contact />
-                </Route>
-                <Route exact path='/'>
-                    <Home />
-                </Route>
-                <Route exact path='/my-portfolio'>
-                    <Home />
-                </Route>
+                <Switch>
+                    <Route path='/'>
+                        <Home />
+                    </Route>
+                    <Route path='/home'>
+                        <Home />
+                    </Route>
+                    <Route path={'/about'}>
+                        <About />
+                    </Route>
+                    <Route path='/education'>
+                        <Education />
+                    </Route>
+                    <Route path='/skills'>
+                        <Skills />
+                    </Route>
+                    <Route path='/contact'>
+                        <Contact />
+                    </Route>
+                </Switch>
             </div>
-        </Router>
+        </HashRouter>
     )
 }
 export default App
