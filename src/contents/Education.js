@@ -5,7 +5,7 @@ function Education() {
     return (
         <div style={{ textAlign: 'center' }}>
             <h1 className='subtopic'>My Education</h1>
-            <img className='diploma' src={Diploma} />
+            <img className='diploma' src={Diploma} alt={'Diploma'} />
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect'
 import ProfilePicture from '../images/SelfResized.png'
-import Background from '../images/coding.gif'
 import './Home.css'
 function Home() {
     return (
