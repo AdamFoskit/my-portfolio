@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch, Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 import Home from './contents/Home'
 import About from './contents/About'
@@ -10,21 +10,23 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import './App.css'
 
+const prefix = process.env.NODE_ENV === 'development' ? '#' : '/'
+
 const Header = (props) => {
     const {
         location: { pathname },
     } = props
     return (
         <Navbar bg='light' variant='light' expand='lg'>
-            <Navbar.Brand href='/home'>Adam Foskit</Navbar.Brand>
+            <Navbar.Brand href='/'>Adam Foskit</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav activeKey={pathname} className='mr-auto'>
-                    <Nav.Link href='/home'>Home</Nav.Link>
-                    <Nav.Link href='/about'>About</Nav.Link>
-                    <Nav.Link href='/education'>Education</Nav.Link>
-                    <Nav.Link href='/skills'>Skills</Nav.Link>
-                    <Nav.Link href='/contact'>Contact</Nav.Link>
+                    <Nav.Link href={prefix}>Home</Nav.Link>
+                    <Nav.Link href={`${prefix}about`}>About</Nav.Link>
+                    <Nav.Link href={`${prefix}education`}>Education</Nav.Link>
+                    <Nav.Link href={`${prefix}skills`}>Skills</Nav.Link>
+                    <Nav.Link href={`${prefix}contact`}>Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -38,10 +40,7 @@ function App() {
             <HeaderWithRouter />
             <div className={'container-fluid'}>
                 <Switch>
-                    <Route path='/'>
-                        <Home />
-                    </Route>
-                    <Route path='/home'>
+                    <Route exact path='/'>
                         <Home />
                     </Route>
                     <Route path={'/about'}>
