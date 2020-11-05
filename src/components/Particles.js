@@ -46,22 +46,19 @@ export default function Particles() {
               opacity: 0.5,
               width: 1,
             },
-            collisions: {
-              enable: true,
-            },
             move: {
               direction: "none",
               enable: true,
               outMode: "bounce",
-              random: true,
-              speed: 4,
+              random: false,
+              speed: 2,
               straight: false,
             },
             number: {
-              value: 300,
+              value: 250,
             },
             opacity: {
-              value: 0.5,
+              value: 0.7,
             },
             shape: {
               type: "circle",

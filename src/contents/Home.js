@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect'
-import ProfilePicture from '../images/SelfResized.png'
-// import ProfilePicture from '../images/Professional.jpg'
+// import ProfilePicture from '../images/SelfResized.png'
+import ProfilePicture from '../images/Pro_Square.jpg'
 import './Home.css'
 function Home() {
     return (
