@@ -9,14 +9,16 @@ import Skills from './contents/Skills'
 import { Element } from 'react-scroll';
 function App() {
     return (
+        <>
+        <Particles />
         <div>
-            <Particles />
             <Header />
             <Element name="home"><Home /></Element>
             <Element name="about"><About /></Element>
             <Element name="skills"><Skills /></Element>
             <Footer />
         </div>
+        </>
     )
 }
 export default App
