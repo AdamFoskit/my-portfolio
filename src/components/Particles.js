@@ -1,5 +1,6 @@
 import React from 'react'
 import * as TSParticles from "react-tsparticles";
+import './Particles.css'
 export default function Particles() {
     return <TSParticles
     id="tsparticles"
