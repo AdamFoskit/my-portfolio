@@ -1,15 +1,24 @@
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-html,
-body {
-    margin: 0;
-    height: 100%;
-    text-align: center;
-}
 img {
-    vertical-align: middle;
+  vertical-align: middle;
+}
+
+#tsparticles canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+.section {
+  padding-top: 22vh;
+  margin-bottom: 22vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

@@ -1,17 +1,114 @@
+.avatar-box {
+  display: flex;
+  width: max-content;
+}
 .avatar {
-    box-shadow: 0px 4px 6px 2px lightgrey;
-    width: 200px;
-    border-radius: 50%;
+  box-shadow: 0px 4px 6px 2px lightgrey;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+body {
+  background: rgb(38, 37, 48);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.home-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+#dust {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.typingeffect span {
+  color: rgb(79, 255, 73) !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: x-large !important;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: max-content;
+  transform: scale(0);
+}
+h1 {
+  font-size: 2em;
+  margin-top: 50px;
+  opacity: 1;
+  position: relative;
+  color: #e3e3eb;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 3px solid #e3e3eb;
+  letter-spacing: 10px;
+
+  > div {
+    position: relative;
+    display: inline-block;
+    + div {
+      display: block;
+    }
+  }
+  span {
+    letter-spacing: normal;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.5em;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+    &:before,
+    &:after {
+      content: '';
+      width: 43%;
+      height: 3px;
+      border-radius: 5px;
+      background: #e3e3eb;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      top: 0.5em;
+    }
+    &:after {
+      left: 0;
+    }
+  }
+}
+p {
+  color: #fff;
+  margin-top: 14px;
+  letter-spacing: 5px;
+  line-height: 1.2em;
 }
 
-.text-center {
-    text-align: center;
+/*ANimation stuff*/
+.title {
+  animation-name: zoomIn;
+  animation-duration: 1.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.25s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
-.background {
-    /* background-image: url('../images/coding.gif'); */
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 90vh;
-    width: auto;
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

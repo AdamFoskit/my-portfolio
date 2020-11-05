@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=David+Libre&family=Quicksand:wght@300&display=swap');
 body {
-    text-align: center;
+  text-align: center;
+}
+.about {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0;
 }

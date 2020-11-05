@@ -1,0 +1,30 @@
+.footer {
+  text-align: center;
+  padding: 9px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 0;
+  bottom: 0;
+  /* height: 40px; */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.775);
+}
+.footer a {
+  display: flex;
+  letter-spacing: normal;
+  font-size: large;
+  color: #e7e7e7;
+}
+/*
+backgroundColor: "#F8F8F8",
+    borderTop: "1px solid #E7E7E7",
+    textAlign: "center",
+    padding: "9px",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    height: "30px",
+    width: "100%",
+*/

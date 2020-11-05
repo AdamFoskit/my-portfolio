@@ -1,0 +1,32 @@
+.my-navbar {
+  text-align: center;
+  padding: 9px;
+  position: fixed !important;
+  z-index: 99 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 0;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.775);
+}
+.my-navbar a {
+  display: flex;
+  letter-spacing: normal;
+  justify-content: space-around;
+  font-size: large;
+  color: #e7e7e7 !important;
+  cursor: pointer;
+}
+
+nav :hover {
+  color: orange !important;
+  text-decoration: underline;
+}
+
+a.active {
+  color: rgb(79, 255, 73) !important;
+}
