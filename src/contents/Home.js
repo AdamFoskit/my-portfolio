@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect'
-// import ProfilePicture from '../images/SelfResized.png'
 import ProfilePicture from '../images/Pro_Square.jpg'
 import './Home.css'
 function Home() {
@@ -23,31 +22,13 @@ function Home() {
             <p><ReactTypingEffect
                     text={['React.', 'JavaScript.', 'React Native.', 'GraphQL.', 'RESTful APIs.', 'Node.js.', 'Express.js.']}
                     className='typingeffect'
-                    speed={60}
-                    eraseDelay={120}
-                    typingDelay={35}
+                    speed={75}
+                    eraseDelay={250}
+                    typingDelay={50}
             />
             </p>
             
             </div> 
-        {/* <div id="dust"></div>
-        <div  className={'avatar-box background'}>  
-            <div className={'title'}>
-                <img
-                    className='avatar'
-                    alt={'Adam Foskit'}
-                    src={ProfilePicture}
-                />
-                <h1>Adam Foskit</h1>
-                <h3>Full Stack Developer</h3>
-                <ReactTypingEffect
-                    text={['I am Adam Foskit', 'I am a Software Engineer']}
-                    className='typingeffect'
-                    speed={100}
-                    eraseDelay={500}
-                />
-            </div>
-        </div> */}
         </div>
     )
 }

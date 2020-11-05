@@ -1,6 +1,4 @@
 import React from 'react';
-import { GiHouse, GiChart } from "react-icons/gi";
-import { ImProfile } from 'react-icons/im'
 import { Link } from 'react-scroll';
 import './Navbar.css'
 const Navbar = () => {
