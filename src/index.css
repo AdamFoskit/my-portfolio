@@ -10,16 +10,17 @@ span,
 a {
   color: #e7e7e7;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.3rem;
+  /* font-size: 1rem !important; */
   letter-spacing: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: 'Frank Ruhl Libre', serif;
-  font-size: 1.5rem;
+  /* font-size: 1.2rem !important; */
   letter-spacing: normal;
 }
 

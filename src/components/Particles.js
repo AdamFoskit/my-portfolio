@@ -1,7 +1,17 @@
 import React from 'react'
 import * as TSParticles from "react-tsparticles";
 import './Particles.css'
+
 export default function Particles() {
+  let particles = 200;
+  let distance = 275
+  let canHover = true;
+  // alert(window.innerWidth)
+  if(window.innerWidth < 600){
+    particles = 80
+    distance = 50
+    canHover = false
+  }
     return <TSParticles
     id="tsparticles"
         options={{
@@ -15,7 +25,7 @@ export default function Particles() {
             detectsOn: "window",
             events: {
               onHover: {
-                enable: true,
+                enable: canHover,
                 mode: "repulse",
               },
               resize: true,
@@ -31,7 +41,7 @@ export default function Particles() {
                 quantity: 3,
               },
               repulse: {
-                distance: 275,
+                distance,
                 duration: 0.15,
               },
             },
@@ -56,7 +66,7 @@ export default function Particles() {
               straight: false,
             },
             number: {
-              value: 250,
+              value: particles,
             },
             opacity: {
               value: 0.7,

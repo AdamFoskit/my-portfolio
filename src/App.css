@@ -13,7 +13,9 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: max-content;
+  /* width: max-content; */
+  /* max-width: 85vw; */
+  width: 90vw;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -21,4 +23,14 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .section {
+    padding-top: 0;
+    margin-bottom: 15vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+  }
 }

@@ -5,7 +5,7 @@ function About() {
         <div className="section" >
             <h1>About Me</h1>
             <span>
-                <h3>
+                <h3 style={{marginRight: 'auto', marginLeft: 'auto'}} >
                     Full Stack Software Engineer | <u>Computer Science </u>
                     Major
                 </h3>

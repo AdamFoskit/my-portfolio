@@ -1,4 +1,4 @@
-.my-navbar {
+.topnav {
   text-align: center;
   padding: 9px;
   position: fixed !important;
@@ -13,20 +13,48 @@
   align-self: center;
   background-color: rgba(0, 0, 0, 0.775);
 }
-.my-navbar a {
-  display: flex;
+.topnav a.active {
+  color: rgb(79, 255, 73) !important;
+}
+.topnav a:hover {
+  color: #15cdfc !important;
+}
+.topnav svg {
+  display: none;
+}
+.topnav a {
+  float: left;
+  display: block;
   letter-spacing: normal;
-  justify-content: space-around;
-  font-size: large;
+  text-align: center;
+  text-decoration: none;
   color: #e7e7e7 !important;
   cursor: pointer;
 }
 
-nav :hover {
-  color: orange !important;
-  text-decoration: underline;
+@media screen and (max-width: 600px) {
+  .topnav {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .topnav a {
+    display: none;
+  }
+  /* .topnav a.active {
+    display: block;
+  } */
+  .topnav svg {
+    display: flex;
+  }
 }
 
-a.active {
-  color: rgb(79, 255, 73) !important;
+@media screen and (max-width: 600px) {
+  .topnav.responsive a {
+    display: flex;
+    font-size: 1.6rem;
+  }
+
+  .topnav.responsive {
+    flex-direction: column;
+  }
 }

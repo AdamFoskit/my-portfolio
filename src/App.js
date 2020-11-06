@@ -3,7 +3,7 @@ import './App.css'
 import Header from './components/Navbar'
 import Particles from './components/Particles'
 import About from './contents/About'
-import Footer from './contents/Footer'
+import Footer from './contents/Footer' 
 import Home from './contents/Home'
 import Skills from './contents/Skills'
 import { Element } from 'react-scroll';
@@ -16,8 +16,8 @@ function App() {
             <Element name="home"><Home /></Element>
             <Element name="about"><About /></Element>
             <Element name="skills"><Skills /></Element>
-            <Footer />
         </div>
+        {window.innerWidth > 600 ?<Footer />:null}
         </>
     )
 }
